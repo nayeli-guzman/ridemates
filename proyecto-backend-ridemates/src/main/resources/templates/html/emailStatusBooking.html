@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificación de Estado de Viaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+        }
+        p {
+            color: #555555;
+            line-height: 1.5;
+        }
+        .status {
+            font-weight: bold;
+            color: #007bff; /* Cambia el color según el estado */
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Actualización del Estado del Viaje</h1>
+    <p>Estimado/a <span th:text="${nombreUsuario}">NombreUsuario</span>,</p>
+    <p>Queremos informarte que el estado de tu viaje ha sido actualizado.</p>
+    <p>Estado actual: <span th:text="${nuevoEstado}">NuevoEstado</span></p>
+    <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+    <p>Gracias por usar nuestro servicio.</p>
+    <p>Saludos,<br>El equipo de RideMates</p>
+</div>
+<div class="footer">
+    <p>Este es un correo automático, por favor no respondas.</p>
+</div>
+</body>
+</html>

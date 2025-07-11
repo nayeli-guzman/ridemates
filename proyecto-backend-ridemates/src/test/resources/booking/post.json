@@ -1,0 +1,9 @@
+{
+  "routeId" : 1,
+  "passengerId" : 1,
+  "destination" : {
+    "longitude" : 12000,
+    "latitude" :  13000
+  },
+  "price" : 3.3
+}

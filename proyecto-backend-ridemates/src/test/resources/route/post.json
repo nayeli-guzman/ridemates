@@ -1,0 +1,12 @@
+{
+  "originDto": {
+    "latitude": 12000.0,
+    "longitude": 12000.0
+  },
+  "destinationDto": {
+    "latitude": 13000.0,
+    "longitude": 13000.0
+  },
+  "capacity": 3,
+  "dateTime": "2000-01-02T00:00:00Z"
+}

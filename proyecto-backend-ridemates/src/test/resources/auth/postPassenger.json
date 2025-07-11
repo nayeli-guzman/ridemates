@@ -1,0 +1,10 @@
+{
+  "firstName" : "nayeli",
+  "lastName" : "guzman",
+  "gender" : "F",
+  "email" : "nayeli.guzman@utec.edu.pe",
+  "password" : "password",
+  "phone" : "999888777",
+  "birthdate" : "2000-01-01",
+  "isDriver" : false
+}

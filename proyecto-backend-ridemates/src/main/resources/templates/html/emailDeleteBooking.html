@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelación de Viaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #d9534f;
+        }
+        p {
+            font-size: 16px;
+            color: #555555;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #777777;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Cancelación de Viaje</h2>
+    <p>Estimado/a <strong th:text="${nombreCliente}">[Nombre del Cliente]</strong>,</p>
+
+    <p>Le informamos que su viaje con el número de reserva <strong th:text="${numeroReserva}">[Número de Reserva]</strong>, programado para el día <strong th:text="${fechaViaje}">[Fecha del Viaje]</strong>, ha sido cancelado con éxito.</p>
+
+    <p>Si necesita más información o desea reprogramar su viaje, por favor no dude en contactarnos.</p>
+
+    <p>Atentamente,</p>
+    <p>El equipo de RideMates </p>
+
+    <div class="footer">
+        <p>&copy; 2024 RideMates. Todos los derechos reservados.</p>
+    </div>
+</div>
+
+</body>
+</html>
